@@ -35,7 +35,7 @@ class ArgosButton extends PanelMenu.Button {
     this._updateInterval = settings.updateInterval;
 
     this._lineView = new ArgosLineView();
-    this._lineView.setMarkup("<small><i>" + GLib.markup_escape_text(file.get_basename(), -1) + " ...</i></small>");
+    this._lineView.setMarkup("<small><i>...</i></small>");
     Utilities.getActor(this).add_actor(this._lineView);
 
     this._isDestroyed = false;
